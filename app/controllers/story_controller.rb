@@ -5,7 +5,7 @@ class StoryController < ApplicationController
 
   def all
 
-    # raise
+    raise
     # logic to display all Stories will go here
   end
 
