@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: "home#index"
+  root to: "story#index"
 
   get  "/new",         to: "story#new"
   get  "/all",         to: "story#all"
