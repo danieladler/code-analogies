@@ -2,9 +2,9 @@
 
 ## Todo:
 - ### Data
-  - set up db
-  - create & migrate story-related model(s)
-  - instantiate story model(s) in existing views as a Rails refresher
+  - ~~set up db~~
+  - ~~create & migrate story-related model(s)~~
+  - ~~instantiate story model(s) in existing views as a Rails refresher~~
 
 - ### Testing
   - set up rspec

@@ -3,11 +3,11 @@
 <div class="page-content">
   <div class="story-wrapper">
     <div class="text-wrapper">
-      <h2 class="story-var" style="display: inline-block"> A     </h2> is like
-      <h2 class="story-var" style="display: inline-block"> B     </h2> because
-      <h2 class="story-var" style="display: inline-block"> STORY </h2>
+      <h2 class="story-var" style="display: inline-block"> <%= @home_story.technology %>  </h2> is like
+      <h2 class="story-var" style="display: inline-block"> <%= @home_story.comparison %>  </h2> because
+      <h2 class="story-var" style="display: inline-block"> <%= @home_story.explanation %> </h2>
     </div>
-    <a href="/new" style="display: block"> Write your own!   </a>
-    <a href="/all" style="display: block"> See all analogies </a>
+    <a href="/new" style="display: inline-block; padding: 20px 10px 20px 0px"> Write your own!   </a>
+    <a href="/all" style="display: inline-block"> See all analogies </a>
   </div>
 </div>

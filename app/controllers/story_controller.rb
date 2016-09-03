@@ -1,8 +1,5 @@
 class StoryController < ApplicationController
 
-  def index
-  end
-
   def all
     @stories = Story.all
     # logic to display all Stories will go here
@@ -14,10 +11,14 @@ class StoryController < ApplicationController
     @story.comparison  = params[:comparison]
     @story.explanation = params[:explanation]
     if @story.save
-      redirect_to root_path # change to: redirect to that story's :id page
+      redirect_to story_path(@story.id)
     else
       raise # change to: render :new w/ save error
     end
+  end
+
+  def show
+    @story = Story.find(params[:id])
   end
 
 end

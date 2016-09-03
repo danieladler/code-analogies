@@ -4,7 +4,9 @@
   <h2> Filters for type / author / recent / etc. will go here </h2>
   <ul class="all-stories-list">
     <% @stories.each do |s| %>
-      <li class="blurb" style="list-style-type: none"> <%= s.technology %> is like <%= s.comparison %> </li>
+      <li class="blurb" style="list-style-type: none">
+        <%= s.technology %> is like <%= s.comparison %>. <%= link_to "See why", story_path(s.id) %>
+      </li>
     <% end %>
   </ul>
 </div>
