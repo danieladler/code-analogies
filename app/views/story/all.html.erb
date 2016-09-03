@@ -1,6 +1,10 @@
 <h1 class="page-title"> All analogies </h1>
 
 <div class="page-content">
-  <h2> X most recent stories will go here </h2>
   <h2> Filters for type / author / recent / etc. will go here </h2>
+  <ul class="all-stories-list">
+    <% @stories.each do |s| %>
+      <li class="blurb" style="list-style-type: none"> <%= s.technology %> is like <%= s.comparison %> </li>
+    <% end %>
+  </ul>
 </div>
