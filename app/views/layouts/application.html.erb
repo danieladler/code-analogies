@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CodeAnalogies</title>
+    <title>Code Analogies</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body style="margin: 0; font-family: helvetica">
+    <%= render "layouts/nav" %>
+
+    <div class="main-content" style="margin: 0 auto; width: 1180px">
+      <%= yield %>
+    </div>
   </body>
 </html>

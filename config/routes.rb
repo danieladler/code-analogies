@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: "story#index"
+
+  get  "/new",         to: "story#new"
+  get  "/all",         to: "story#all"
+  get  "/stories/:id", to: "story#show", as: :story
+  post "/create",      to: "story#create"
+
 end
