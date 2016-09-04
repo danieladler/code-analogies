@@ -10,6 +10,7 @@
   - ~~set up rspec; confirm TDD working w/ Story model validation specs~~
   - write unit tests for Story model so far
   - write integration tests for routes & controllers so far
+  - later: revisit filtered-out specs for app/channels and app/jobs
 
 - ### Users, Sessions, Authentication
   - set up unit specs for User model, then create model per TDD

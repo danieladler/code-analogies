@@ -35,6 +35,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
   gem 'guard-rspec', require: false
+  gem 'simplecov', :require => false, :group => :test
 end
 
 group :development do
