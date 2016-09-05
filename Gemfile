@@ -36,6 +36,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec', require: false
   gem 'simplecov', :require => false, :group => :test
+  gem 'rails-controller-testing'
 end
 
 group :development do

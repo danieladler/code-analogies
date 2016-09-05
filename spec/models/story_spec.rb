@@ -27,4 +27,12 @@ describe Story do
     end
   end
 
+  describe ".random_home_story" do
+    # TODO: after fixtures are set up, make sure the returned instance is one of the stories from the fixture collection
+    it "returns an instance of Story" do
+      @home_story = Story.random_home_story
+      expect(@home_story).to be_an_instance_of Story
+    end
+  end
+
 end
