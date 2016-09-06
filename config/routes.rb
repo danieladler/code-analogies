@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get  "/new",         to: "story#new"
   get  "/all",         to: "story#all"
   get  "/stories/:id", to: "story#show", as: :story
-  post "/create",      to: "story#create"
+  post "/new",         to: "story#create"
 
 end

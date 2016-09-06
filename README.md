@@ -7,14 +7,13 @@
   - ~~instantiate story model(s) in existing views as a Rails refresher~~
 
 - ### Testing
-  - set up rspec
-  - write unit tests for story models
-  - write integration tests for routes & controllers so far
+  - ~~set up rspec; confirm TDD working w/ Story model validation specs~~
+  - ~~write unit tests for Story model so far~~
+  - ~~write integration tests for routes & controllers so far~~
+  - later: revisit filtered-out specs for app/channels and app/jobs
 
 - ### Users, Sessions, Authentication
-  - add `has_secure_password` to user model
-  - user_controller w/ `sign_up` method for signup view or modal; `create` method for new account, `sign_in` method for view or modal (include password and password-confirm)
-
+  - set up unit specs for User model, then create model per TDD
   - in User model, add `has_secure_password`
   - make sure table for User model has `password_digest: string` as as column, not `password` and `password_confirmation`
   - install bcrypt gem:
@@ -23,6 +22,9 @@
       - uncomment bcrypt in gem file: `gem 'bcrypt', '~> 3.1.7'`
       - `gem install bcrypt`
       - restart rails server
+
+  - set up integration specs for User-related routes and such
+  - user_controller w/ `sign_up` method for signup view or modal; `create` method for new account, `sign_in` method for view or modal (include password and password-confirm)
 
 - ### Style
   - set up SASS w/ a framework and remove inline styles
